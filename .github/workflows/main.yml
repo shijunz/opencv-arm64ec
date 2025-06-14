@@ -1,13 +1,9 @@
 name: OCV PR:4.x Windows-11-arm
 
-on:
-  pull_request:
-    branches:
-      - main
+on: [push, pull_request]
 
-    
 jobs:
-  BuildAndTest:
+  build_andtest:
     runs-on: windows-11-arm
     defaults:
       run:
